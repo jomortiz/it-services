@@ -2,10 +2,6 @@
 	    // animate on scroll
 	    new WOW().init();
 	});
-
-// ====================================================
-                        // NAVIGATION
-// ====================================================
 	(function($) {
 	    "use strict"; // Start of use strict
 		// Smooth scrolling using jQuery easing
