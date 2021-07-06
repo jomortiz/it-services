@@ -1,13 +1,3 @@
-/*
-author: Boostraptheme
-author URL: https://boostraptheme.com
-License: Creative Commons Attribution 4.0 Unported
-License URL: https://creativecommons.org/licenses/by/4.0/
-*/ 
-
-/*====================================================
-                   CONTACT-P1
-======================================================*/
 #contact-p1{
 	padding: 100px 0 50px 0;
 }
@@ -28,12 +18,6 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         font-size: 16px;
     }
 }
-
-/*====================================================
-                   CONTACT-P2
-======================================================*/
- 
-
     #contact-p2 .sub-but {
       margin: 0;
       text-align: center;
