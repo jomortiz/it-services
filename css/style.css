@@ -1,31 +1,5 @@
-/*
-author: Boostraptheme
-author URL: https://boostraptheme.com
-License: Creative Commons Attribution 4.0 Unported
-License URL: https://creativecommons.org/licenses/by/4.0/
-*/ 
-
-/*====================================================
-                DEFAULT VALUES:
-
-                Font Family                 : Roboto Condensed
-                
-                Greenish Blue               : #2196f3       (Buttons, Icons, Links, Lines & Backgrounds)
-                Steel Gray                  : #41464b       (Headings)
-                light Gray                  : #61666b       (Heading Second)
-                Gray                        : #717171       (Paragraphs)
-                Gray extra light            : #f5f5f5       (Content Background)
-                White                       : #fff          (Text With Black Backgrounds)
-                Black                       : #000 
-
-======================================================*/
-
 @import url('https://fonts.googleapis.com/css?family=Hind:400,600');
-
-/* General CSS */
-
-html,
-body {
+html,body {
     height: 100%;
 }
 
@@ -59,35 +33,21 @@ p {
         font-weight: 300;
     }    
 }
- 
-/*====================================================
-                       NAVIGATION
-======================================================*/
-     
-    /*Top Navbar*/
-
-    .top-menubar-nav {
-        display: none;
-    }
-
-    header .topmenu {
-        background: #f0f0f0;
-        border-top: solid 1px #f0f0f0;
-        border-bottom: solid 1px #f0f0f0;
-    }
-
-
-    /*Top Contacts*/
-
-    header .topmenu ul {
-        margin: 0;
-    }
-
-    header .topmenu .top-contacts {
-        line-height: 25px;
-    }
-
-    header .topmenu .top-contacts li {
+.top-menubar-nav {
+  display: none;
+}
+header .topmenu {
+  background: #f0f0f0;
+  border-top: solid 1px #f0f0f0;
+  border-bottom: solid 1px #f0f0f0;
+}
+header .topmenu ul {
+  margin: 0;
+}
+header .topmenu .top-contacts {
+   line-height: 25px;
+ }
+header .topmenu .top-contacts li {
         color: #666;
         padding: 5px 0;
         font-size: 12px;
@@ -187,10 +147,6 @@ p {
     header .topmenu .top-data li a.log-top:hover {
         color:#555;
     }
-
-
-    /*Responsive Topbar*/
-
     @media (max-width: 991px) {
         header .topmenu ul {
             text-align: center !important;
@@ -205,8 +161,6 @@ p {
         }
     }
 
-
-    /*Navbar*/
     .affix {
         position: fixed;
         top: 0;
@@ -263,9 +217,6 @@ p {
     .navbar-nav>li>a:active {
         color: #2196f3!important;
     }
-
-    
-    /*This is item search bar*/
 
     .navbar-nav li>.search {
         color: #aaa;
@@ -514,11 +465,6 @@ p {
             font-size: 15px;
         }
     }
-
-/*====================================================
-                  BUTTON (Generic)
-======================================================*/
-
     .btn-general {
         background-color: transparent;
         text-align: center;
@@ -554,11 +500,6 @@ p {
         color: #fff;
         cursor: pointer;
     }
-     
-/*====================================================
-                       HOME
-======================================================*/
-
     .carousel-fade {
         height: 90vh;
         background-size: cover;
@@ -731,11 +672,6 @@ p {
             margin-bottom: 15px;
         }
     }
-
-/*====================================================
-               OTHER HOME PAGE
-======================================================*/
-
       .home-p {
         z-index: 1;
         padding: 100px 0;
@@ -817,11 +753,6 @@ p {
           font-size: 18px;
         }
       }
-
-/*====================================================
-               TITLE CONTENT (Generic)
-======================================================*/
-
     .title-bar {
         padding: 100px 0;
     }
@@ -895,11 +826,6 @@ p {
             font-size: 16px;
         }
     }
-
-/*====================================================
-               COLOR (Generic)
-======================================================*/
-
     .cl-white {
         color: #fff;
     }
@@ -946,95 +872,6 @@ p {
         background: -o-linear-gradient(45deg, rgba(34, 155, 242, 1) 0%, rgba(0, 128, 129, 1) 99%, rgba(0, 128, 128, 1) 100%);
         /* opera 11.10+ */
     }
-
-/*====================================================
-                LOGIN OR REGISTER
-======================================================*/
-
-        #login-modal .modal-dialog {
-            margin-top: 170px;
-            width: 400px;
-        }
-
-        #login-modal label {
-            color: #888;
-            margin-bottom: 0;
-        }
-
-        #login-modal input[type=text],
-        input[type=password] {
-            margin-bottom: 15px;
-            border-radius: 0;
-        }
-
-        .modal-backdrop.in {
-            filter: alpha(opacity=10);
-            opacity: .8;
-        }
-
-        .modal-content {
-            /*background-color: #ececec;*/
-            border: 3px solid #2196f3;
-            border-radius: 0px;
-            outline: 0;
-        }
-
-        .modal-header {
-            min-height: 16.43px;
-            padding: 15px 15px 15px 15px;
-            border-bottom: 0px;
-        }
-
-        .modal-body {
-            position: relative;
-            padding: 25px 45px;
-        }
-
-        .modal-footer {
-            padding: 15px 45px 15px 45px;
-            text-align: left;
-            width: 100%;
-            border-top: 0px;
-            -ms-flex-align: center;
-            align-items: center;
-            -ms-flex-pack: end;
-            justify-content: center;
-        }
-
-        .modal-footer {
-            display: -ms-flexbox;
-            display: flex;
-            padding: 15px;
-            border-top: 1px solid #e9ecef;
-        }
-
-        .checkbox {
-            margin-bottom: 0px;
-        }
-
-
-        .btn-link {
-            padding: 5px 10px 0px 0px;
-            color: #95a5a6;
-        }
-
-        .btn-link:hover,
-        .btn-link:focus {
-            color: #2c3e50;
-            text-decoration: none;
-        }
-
-        @media (max-width: 575px) {
-            #login-modal .modal-dialog {
-                margin-top: 100px;
-                width: 300px;
-                margin: 100px auto;
-            }
-        }
-
-/*====================================================
-                        ABOUT
-======================================================*/
 
     .about .about-content-box {
         padding: 80px 20px;
@@ -1089,11 +926,6 @@ p {
             margin: 0;
         }
     }
-
-
-/*====================================================
-                       STORY
-======================================================*/
 
     #story {
         padding-bottom: 50px;
@@ -1189,9 +1021,6 @@ p {
             font-size: 16px;
         }
     }
-    /*====================================================
-                       BUSINESS-GROWTH-P1
-    ======================================================*/
     .services-hover:hover{
         text-decoration: none;
     }
@@ -1281,10 +1110,6 @@ p {
             padding: 0 40px 100px 40px;
         }
     }
-/*====================================================
-                       THOUGHT
-======================================================*/
-
     .bg-parallax {
         background-repeat: no-repeat;
         background-size: cover;
@@ -1319,11 +1144,6 @@ p {
     #thought .title-bar {
         padding: 50px 0;
     }
-
-
-/*====================================================
-                       OFFER
-======================================================*/
 
     #comp-offer {
         padding: 100px 0;
@@ -1452,11 +1272,6 @@ p {
             font-size: 16px;
         }
     }
-
-/*====================================================
-                      WHAT WE DO
-======================================================*/
-
     .what-we-do {
         padding: 110px 0;
     }
@@ -1544,11 +1359,6 @@ p {
             font-size: 15px;
         }
     }
-
-/*====================================================
-                   SERVICE-HOME
-======================================================*/
-
     #service-h {
         padding: 120px 0 50px;
     }
@@ -1676,12 +1486,6 @@ p {
         }
     }
 
-
-
-/*====================================================
-                       CLIENT
-======================================================*/
-
     #client {
         padding-bottom: 100px;
         background: #f0f0f0;
@@ -1760,12 +1564,6 @@ p {
             text-transform: uppercase;
         }
     }
-
-
-/*====================================================
-                   CONTACT-HOME
-======================================================*/
-
     .contact-h-bg {
         background-image: url(../img/contact-bg.jpg);
         background-attachment: fixed;
@@ -1796,12 +1594,6 @@ p {
         color: #fff;
     }
 
-
-
-/*====================================================
-                    FOOTER
-======================================================*/
-
     .footer-s1 .footer {
         padding: 70px 0;
         background: #252525;
@@ -1812,10 +1604,6 @@ p {
         color: #ccc;
         font-size: 15px;
     }
-
-
-
-    /*Heading Fotoer*/
 
     .footer-s1 .heading-footer {
         text-align: left;
@@ -1839,12 +1627,6 @@ p {
         font-size: 18px;
         text-transform: none;
     }
-
-
-
-
-    /*Link link*/
-
     .footer-s1 .footer .link-list {
         margin-bottom: 0;
     }
@@ -1874,11 +1656,6 @@ p {
         color: #555;
         display: block;
     }
-
-
-
-    /*Thumb list*/
-
     .footer-s1 .footer .thumb-list>li {
         margin-bottom: 20px;
     }
@@ -1925,11 +1702,6 @@ p {
         float: left;
         margin: 10px;
     }
-
-
-
-    /*footer bottom*/
-
     #footer-bottom {
         background-color: rgba(0, 0, 0, 0.8);
         padding: 30px 0;
