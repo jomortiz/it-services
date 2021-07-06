@@ -1,14 +1,3 @@
-/*
-author: Boostraptheme
-author URL: https://boostraptheme.com
-License: Creative Commons Attribution 4.0 Unported
-License URL: https://creativecommons.org/licenses/by/4.0/
-*/ 
-
-/*====================================================
-                   BUSINESS-GROWTH-P1
-======================================================*/
-
 .business-growth-p1 {
     padding-bottom: 100px;
 }
@@ -96,11 +85,6 @@ ul.service-spec li p {
     }
 }
 
-
-/*====================================================
-                   FINANCIAL-P1
-======================================================*/
- 
 .financial-p2-bg {
     background-image: url(../img/image-1.jpg);
     background-repeat: no-repeat;
@@ -170,11 +154,6 @@ ul.service-spec li p {
     }
 }
 
-
-/*====================================================
-                   FINANCIAL-P5
-======================================================*/
-
 .financial-p5 .title-bar {
     padding: 50px;
 }
@@ -206,13 +185,6 @@ ul.service-spec li p {
 .financial-p5 .what-we-desc p {
     color: #ddd;
 }
-
-
-
-/*====================================================
-                   FINANCIAL-P6
-======================================================*/
-
 .financial-p6 {
     padding: 100px 0;
 }
