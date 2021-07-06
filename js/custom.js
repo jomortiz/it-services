@@ -1,10 +1,3 @@
-/*
-author: Boostraptheme
-author URL: https://boostraptheme.com
-License: Creative Commons Attribution 4.0 Unported
-License URL: https://creativecommons.org/licenses/by/4.0/
-*/ 
-
 // ====================================================
                         // ANIMATION
 // ====================================================
@@ -29,49 +22,22 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 		    return false;
 		  }
 		}); 
-
-	    // Closes responsive menu when a scroll trigger link is clicked
 	    $('.js-scroll-trigger').click(function() {
 	      $('.navbar-collapse').collapse('hide');
 	    });
 
 	    $("a.smooth-scrolls").click(function (event) {
 
-	        // event.preventDefault();
-
-	        // get/return id like #about, #work, #team and etc
-	        var section = $(this).attr("href");
+		    var section = $(this).attr("href");
 
 	        $('html, body').animate({
 	            scrollTop: ($(section).offset().top - 2)
 	        }, 1000, "easeInOutExpo");
 	    });
-
-	    // Activate scrollspy to add active class to navbar items on scroll
 	    $('body').scrollspy({
 	      target: '#mainNav',
 	      offset: 62
-	    }); 
-
-	    // $(".navbar-collapse ul li a").on("click touch", function(){
-	       
-	    //     $(".navbar-toggle").click();
-	    // });
-
-	    // search bar
-        jQuery('.search').on("click", function () {
-        if(jQuery('.search-btn').hasClass('fa-search')){
-          jQuery('.search-open').fadeIn(500);
-          jQuery('.search-btn').removeClass('fa-search');
-          jQuery('.search-btn').addClass('fa-times');
-        } else {
-          jQuery('.search-open').fadeOut(500);
-          jQuery('.search-btn').addClass('fa-search');
-          jQuery('.search-btn').removeClass('fa-times');
-        }
-      });
-
-      //fixed navbar
+	    });
       var toggleAffix = function(affixElement, scrollElement, wrapper) {
       
         var height = affixElement.outerHeight(),
@@ -85,10 +51,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
             affixElement.removeClass("affix");
             wrapper.height('auto');
         }
-          
       };
-      
-
       $('[data-toggle="affix"]').each(function() {
         var ele = $(this),
             wrapper = $('<div></div>');
@@ -101,20 +64,13 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         // init
         toggleAffix(ele, $(window), wrapper);
       });
-      
-        // Hover dropdown 
-        $('ul.navbar-nav li.dropdown').hover(function() {
+	$('ul.navbar-nav li.dropdown').hover(function() {
           $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
         }, function() {
           $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
         });
 
-	})(jQuery); // End of use strict
-
-
-// ====================================================
-                   // LOGIN FORM
-// ====================================================
+	})(jQuery);
 
     (function($) {
 
@@ -175,10 +131,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         } 
     })(jQuery); // End of use strict
 
-// ====================================================
-                   // AUTO WRITER
-// ====================================================
-      var TxtType = function(el, toRotate, period) {
+var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
         this.loopNum = 0;
@@ -235,17 +188,11 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         document.body.appendChild(css);
     };  
 
-// ====================================================
-                   // HOME TEXT SCROLL
-// ====================================================
 	(function($) {
 	      $('.carousel').carousel();
 	})(jQuery); // End of use strict
 
 
-// ====================================================
-                        // BLOG
-// ====================================================
         $( document ).ready(function() {
          
             $('.thumbnail-blogs').hover(
@@ -258,9 +205,6 @@ License URL: https://creativecommons.org/licenses/by/4.0/
             );                                      
         });
 
-// ====================================================
-                        // THOUGHTS
-// ====================================================
 	(function($) {
 
 	    $("#clients-list").owlCarousel({
@@ -295,9 +239,6 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         autoplayHoverPause: true
     });
 
-// ====================================================
-                	// BACK TO TOP
-// ====================================================
 	(function($) {
 
 	    $(window).scroll(function () {
@@ -313,12 +254,8 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 	            $("#back-to-top").fadeIn();
 	        }
 	    });
-	})(jQuery); // End of use strict
+	})(jQuery);
 
-
-// ====================================================
-                    // TESTIMONIALS
-// ====================================================
     $('#customers-testimonials').owlCarousel({
         items: 1,
         autoplay: true,
